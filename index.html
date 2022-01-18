@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operation Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- <h1>VARIABLE OPERAND/OPERATION CALCULATOR</h1> -->
+    <div class="wrapper">
+        <div class="mode-div">
+            <label>MODE</label>
+            <select name="mode" id="modeselect">
+                <option value="0" id="option1">Select Calculator Mode</option>
+                <option value="Multiplication">Multiplication</option>
+                <option value="Sum">Sum</option>
+                <option value="Subtraction">Subtraction</option>
+                <option value="Division">Division</option>
+                <option value="Average">Average</option>
+            </select>
+        </div>
+        <h1>Simple JS Calculator</h1>
+        <div class="input-group-wrapper" id="everyinput">
+            <div class="input-group">
+                <label id="label1">Input 1</label>
+                <div class="input-and-image">
+                    <input type="text" value="10" id="in1" class="allinput">
+                    <img src="Vector.png" class="vector-img" id="img1" alt="Vector">
+                </div>
+            </div>
+            <div class="input-group">
+                <label id="label2">Input 2</label>
+                <div class="input-and-image">
+                    <input type="text" value="6" id="in2" class="allinput">
+                    <img src="Vector.png" class="vector-img" id="img2" alt="Vector">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label id="label3">Input 3</label>
+                <div class="input-and-image">
+                    <input type="text" value="6" id="in3" class="allinput">
+                    <img src="Vector.png" class="vector-img" id="img3" alt="Vector">
+                </div>
+            </div>
+        </div>
+
+        <button id="addinput">ADD INPUT</button>
+        <div class="bottom-btns">
+            <span id="product">The product is</span>
+            <div class="right-buttons">
+                <button id="reset-input">RESET</button>
+                <button id="calc-input">CALCULATE</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
